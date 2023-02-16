@@ -4,7 +4,7 @@
 from typing import Callable
 
 
-def create_handlers(callback: Callable[[int], int]) -> list:
+def create_handlers(callback: Callable) -> list:
     """Возвращает сгенерированный список обработчиков в заданном диапазоне"""
     return [callback for _ in range(5)]
 
